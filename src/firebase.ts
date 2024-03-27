@@ -7,7 +7,7 @@ import { getFirestore } from "firebase/firestore";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyDyXMpu-9dlAg0DaSB22aknfAc1nF5mPx4",
+  apiKey: process.env.FIREBASE_API_KEY,
   authDomain: "video-call-a6c34.firebaseapp.com",
   projectId: "video-call-a6c34",
   storageBucket: "video-call-a6c34.appspot.com",
