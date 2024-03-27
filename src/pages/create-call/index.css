@@ -1,0 +1,47 @@
+.create-call-con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.local-video-con {
+    position: relative;
+    margin: 0 auto;
+}
+
+.overlay { 
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.local-video-con video {
+    width: 500px;
+    height:380px;
+    overflow: hidden;
+    border: 1px solid white;
+    border-radius: 12px;
+}
+
+.video-permission-btn {
+    width: 70%;
+}
+
+.local-video-con {
+    padding: 10px;
+}
+
+.btn-con {
+     padding: 10px;
+     margin: 0 auto;
+}
+
+.btn-con button {
+    margin-top: 10px;
+}

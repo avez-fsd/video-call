@@ -1,38 +1,155 @@
-.App {
-  text-align: center;
+
+html{
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face{
+  font-family: 'Axiforma';
+  src: url('./assets/font/Axiforma-Regular.woff2') format('woff2'),
+       url('./assets/font/Axiforma-Regular.woff') format('woff'),
+       url('./assets/font/Axiforma-Regular.ttf') format('ttf'),
+       url('./assets/font/Axiforma-Regular.eot') format('eot'),
+       url('./assets/font/Axiforma-Regular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face{
+  font-family: 'Axiforma';
+  src: url('./assets/font/Axiforma-Bold.woff2') format('woff2'),
+       url('./assets/font/Axiforma-Bold.woff') format('woff'),
+       url('./assets/font/Axiforma-Bold.ttf') format('ttf'),
+       url('./assets/font/Axiforma-Bold.eot') format('eot'),
+       url('./assets/font/Axiforma-Bold.svg') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@font-face{
+  font-family: 'Axiforma';
+  src: url('./assets/font/Axiforma-SemiBold.woff2') format('woff2'),
+       url('./assets/font/Axiforma-SemiBold.woff') format('woff'),
+       url('./assets/font/Axiforma-SemiBold.ttf') format('ttf'),
+       url('./assets/font/Axiforma-SemiBold.eot') format('eot'),
+       url('./assets/font/Axiforma-SemiBold.svg') format('svg');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face{
+  font-family: 'Axiforma';
+  src: url('./assets/font/Axiforma-Thin.woff2') format('woff2'),
+       url('./assets/font/Axiforma-Thin.woff') format('woff'),
+       url('./assets/font/Axiforma-Thin.ttf') format('ttf'),
+       url('./assets/font/Axiforma-Thin.eot') format('eot'),
+       url('./assets/font/Axiforma-Thin.svg') format('svg');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+body, input, textarea, button {
+  font-family: 'Axiforma', Helvetica, Arial, sans-serif;
+}
+
+
+
+body {
+  background: rgba(239, 239, 240, 1);
+  font-family: 'Axiforma', Helvetica, Arial, sans-serif;
+  font-feature-settings: 'ss02';
+  font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+}
+
+video {
+  background: black;
+}
+
+
+button {
+  width: 100%;
+}
+
+.btn {
+  background: rgb(255, 107, 0);
+  padding: 8px;
+  border: 0px;
+  color:white;
+  font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 12px;
+  height: 50px;
+  white-space: nowrap;
+}
+
+.btn:hover {
+  background: rgb(255, 168, 0);
+  cursor: pointer;
+}
+
+.btn:disabled {
+  background: rgba(175, 174, 172, 0.8);
+}
+
+.btn:hover:disabled {
+  cursor: initial;
+}
+
+header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  box-sizing: border-box;
+  max-width: 500px;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0px 6px 11px -4px rgba(7, 7, 7, 0.05);
+}
+
+header button {
+  background: #fff;
+  border: none;
+  width: 34px;
+  height: 34px;
+  order:1;
+  color:rgb(255, 107, 0);
+}
+
+.center-text {
+  text-align: center;
+  flex-grow: 1; /* Takes up remaining space */
+  order: 2;
+  color:rgb(255, 107, 0)
+}
+
+.caller-con {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.caller-sub-con {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+video {
+  width: 500px;
+  overflow: hidden;
+  border: 1px solid white;
+  border-radius: 12px;
 }

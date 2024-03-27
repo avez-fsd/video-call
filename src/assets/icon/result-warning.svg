@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.12 45">
+    <path className="base-1" d="M19.87,3A6,6,0,0,1,30.26,3L49.31,36a6,6,0,0,1-5.2,9H6a6,6,0,0,1-5.2-9Z" fill="currentColor" />
+    <path className="base-2" d="M19.87,3A6,6,0,0,1,30.26,3L49.31,36a6,6,0,0,1-5.2,9H6a6,6,0,0,1-5.2-9Z" fill="currentColor" />
+    <path className="mark" d="M25,16.75A1.25,1.25,0,0,1,26.25,18v9a1.25,1.25,0,0,1-2.5,0V18A1.25,1.25,0,0,1,25,16.75Z" fill="#FFF" />
+    <path className="mark" d="M25,30.75A1.25,1.25,0,0,1,26.25,32v1a1.25,1.25,0,0,1-2.5,0V32A1.25,1.25,0,0,1,25,30.75Z" fill="#FFF" />
+</svg>
